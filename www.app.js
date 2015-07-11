@@ -1,8 +1,8 @@
 var http = require('http');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
+// var cookieParser = require('cookie-parser');
+// var session = require('express-session');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var winston = require('winston');
@@ -12,7 +12,7 @@ var app = express();
 global.logger = winston;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser('secret'));
+// app.use(cookieParser('secret'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 if (process.env.FILE_LOG){

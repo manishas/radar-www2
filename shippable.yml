@@ -6,8 +6,4 @@ node_js:
     - 0.10.33
 
 before_install:
-<<<<<<< HEAD
     - node --version
-=======
-    - node --version
->>>>>>> origin/master

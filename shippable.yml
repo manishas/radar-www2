@@ -5,5 +5,11 @@ language: node_js
 node_js:
     - 0.10.33
 
-before_install:
-    - node --version
+env:
+  global:
+    # UGLY secure variables....
+    - secure: YtSX204QeZ4hJ89DCrH/3W+XjbGCBfkhWPwJumHCBMVGkmpF4XWwbLqG65IZtQlRMNRlwI3vsTksDhXnK3ng2nsUUBPyzxbcVI7AJMgd2tIGjGzxqcCLemel+sA+ES/2TBFyy5+mlE2/RqohUWw/xRj45nHQqEIC0xwDmQcQvFObaMjLgceI01uv7AxdLVDpOVMO2i7g7Bxwvfru3EtUVZB+siTAUn28WbCesgSFhNIZa56z+4CpYRfTQP6lfrIWlhtcsHPlb6T0rqXO3gRkaFIBgMLj5Ab/eIeHoOfcdJ/YjsV4NjCYqH/9QgMNMj46EEfcsK2IiFCyFu6X/HwCTw==
+
+build:
+  ci:
+    - pwd

@@ -13,3 +13,18 @@ env:
 build:
   ci:
     - pwd
+
+resources:
+  - name: myFoo
+    type: integration
+    integration: myFooCreds
+    
+    
+  - name: myGkeCluster
+    type: cluster
+    integration: myGkeCreds
+    pointer:
+      region: us-central1-a
+      sourceName: myGkeCluster
+      
+  
